@@ -58,21 +58,21 @@ struct RealityViewContainer: UIViewRepresentable {
                     }
                     print("Current anchor count in scene: \(arView.scene.anchors.count)")
                     print("Found anchor entity for model placement. Starting model load for url: \(url)")
-                    ModelEntity.loadModelAsync(contentsOf: url)
-                        .sink(receiveCompletion: { completion in
-                            if case let .failure(error) = completion {
-                                print("Error loading model: \(error)")
-                            } else {
-                                print("Model loaded successfully!")
+                    
+                    Task {
+                        do {
+                            let modelEntity = try await ModelEntity(contentsOf: url)
+                            await MainActor.run {
+                                print("Adding model entity to anchor, elevating by 20cm. ModelEntity: \(modelEntity)")
+                                modelEntity.setScale(SIMD3<Float>(0.0005, 0.0005, 0.0005), relativeTo: nil) // Scale down to 5%
+                                modelEntity.position = SIMD3<Float>(0, 0.06, 0)
+                                anchorEntity.addChild(modelEntity)
+                                print("Model entity added to anchor.")
                             }
-                        }, receiveValue: { modelEntity in
-                            print("Adding model entity to anchor, elevating by 20cm. ModelEntity: \(modelEntity)")
-                            modelEntity.setScale(SIMD3<Float>(0.0005, 0.0005, 0.0005), relativeTo: nil) // Scale down to 5%
-                            modelEntity.position = SIMD3<Float>(0, 0.02, 0)
-                            anchorEntity.addChild(modelEntity)
-                            print("Model entity added to anchor.")
-                        })
-                        .store(in: &self.cancellables)
+                        } catch {
+                            print("Error loading model: \(error)")
+                        }
+                    }
                 }
                 .store(in: &cancellables)
         }

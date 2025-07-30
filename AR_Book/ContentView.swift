@@ -19,8 +19,28 @@ struct ContentView: View {
             // Overlay Lottie animation when loading
             if loader.isLoading {
                 Color.black.opacity(0.5).edgesIgnoringSafeArea(.all)
-                LottieView(name: "2", loopMode: .loop)
-                    .frame(width: 50, height: 50)
+                
+                VStack {
+                    Spacer()
+                    
+                    VStack(spacing: 16) {
+                        LottieView(name: "2", loopMode: .loop)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 80, height: 80)
+                        
+                        Text("Loading model...")
+                            .foregroundColor(.white)
+                            .font(.system(size: 16, weight: .medium))
+                    }
+                    .padding(24)
+                    .background(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color.black.opacity(0.8))
+                    )
+                    
+                    Spacer()
+                }
+                .edgesIgnoringSafeArea(.all)
             }
 
             // Overlay error message if needed
