@@ -89,6 +89,7 @@ struct ContentView: View {
             )) {
                 if let section = selectedSection {
                     ARScanView(section: section)
+                        .navigationBarBackButtonHidden(true)
                 }
             }
         }
