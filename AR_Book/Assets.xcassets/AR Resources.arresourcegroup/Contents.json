@@ -6,6 +6,21 @@
   "resources" : [
     {
       "filename" : "AR Resource.arreferenceimage"
+    },
+    {
+      "filename" : "DodgeImage.arreferenceimage"
+    },
+    {
+      "filename" : "FerrariImage.arreferenceimage"
+    },
+    {
+      "filename" : "MercedesImage.arreferenceimage"
+    },
+    {
+      "filename" : "RaptorImage.arreferenceimage"
+    },
+    {
+      "filename" : "RenaultImage.arreferenceimage"
     }
   ]
 }

